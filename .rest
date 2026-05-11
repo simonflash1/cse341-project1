@@ -1,0 +1,81 @@
+### ============================================
+### CSE 341 - Project 1 (Contacts API)
+### ============================================
+
+@localUrl = http://localhost:8080
+@prodUrl = https://cse341-project1-os3l.onrender.com
+
+### --------------------------------------------
+### LOCAL TESTS
+### --------------------------------------------
+
+### GET all contacts (local)
+GET {{localUrl}}/contacts
+
+### GET contact by id (local) - replace the id
+GET {{localUrl}}/contacts/PASTE_ID_HERE
+
+### POST create new contact (local)
+POST {{localUrl}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Nestor",
+  "lastName": "Lizarraga",
+  "email": "nestor@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1995-04-12"
+}
+
+### PUT update contact (local) - replace the id
+PUT {{localUrl}}/contacts/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "Nestor",
+  "lastName": "Lizarraga",
+  "email": "nestor.updated@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1995-04-12"
+}
+
+### DELETE contact (local) - replace the id
+DELETE {{localUrl}}/contacts/PASTE_ID_HERE
+
+
+### --------------------------------------------
+### PRODUCTION TESTS (Render)
+### --------------------------------------------
+
+### GET all contacts (prod)
+GET {{prodUrl}}/contacts
+
+### GET contact by id (prod) - replace the id
+GET {{prodUrl}}/contacts/PASTE_ID_HERE
+
+### POST create new contact (prod)
+POST {{prodUrl}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Nestor",
+  "lastName": "Lizarraga",
+  "email": "nestor@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1995-04-12"
+}
+
+### PUT update contact (prod) - replace the id
+PUT {{prodUrl}}/contacts/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "Nestor",
+  "lastName": "Lizarraga",
+  "email": "nestor.updated@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1995-04-12"
+}
+
+### DELETE contact (prod) - replace the id
+DELETE {{prodUrl}}/contacts/PASTE_ID_HERE
